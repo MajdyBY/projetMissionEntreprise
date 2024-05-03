@@ -1,4 +1,4 @@
-package tn.esprit.examen.entities;
+package tn.esprit.projet.entities;
 
 
 import jakarta.persistence.*;

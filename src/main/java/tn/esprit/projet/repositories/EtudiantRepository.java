@@ -1,7 +1,7 @@
-package tn.esprit.examen.repositories;
+package tn.esprit.projet.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import tn.esprit.examen.entities.Etudiant;
+import tn.esprit.projet.entities.Etudiant;
 
 public interface EtudiantRepository extends JpaRepository<Etudiant,Long> {
 }

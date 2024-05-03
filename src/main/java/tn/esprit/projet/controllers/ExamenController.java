@@ -1,10 +1,10 @@
-package tn.esprit.examen.controllers;
+package tn.esprit.projet.controllers;
 
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.examen.entities.Etudiant;
-import tn.esprit.examen.services.IExamenService;
+import tn.esprit.projet.entities.Etudiant;
+import tn.esprit.projet.services.IExamenService;
 
 @RestController
 @AllArgsConstructor

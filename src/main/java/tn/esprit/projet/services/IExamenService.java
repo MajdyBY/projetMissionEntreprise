@@ -1,6 +1,6 @@
-package tn.esprit.examen.services;
+package tn.esprit.projet.services;
 
-import tn.esprit.examen.entities.Etudiant;
+import tn.esprit.projet.entities.Etudiant;
 
 public interface IExamenService {
 

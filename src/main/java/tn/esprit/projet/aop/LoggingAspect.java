@@ -1,4 +1,4 @@
-package tn.esprit.examen.aop;
+package tn.esprit.projet.aop;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -9,25 +9,25 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Slf4j
 public class LoggingAspect {
-    @Before("execution( * tn.esprit.examen.services.*.*(..))")
+    @Before("execution( * tn.esprit.projet.services.*.*(..))")
     public void logMethodEntry(JoinPoint joinPoint) {
         String name = joinPoint.getSignature().getName();
         log.info("In method : " + name + " : ");
     }
 
-    @AfterReturning("execution( * tn.esprit.examen.services.*.*(..))")
+    @AfterReturning("execution( * tn.esprit.projet.services.*.*(..))")
     public void logMethodExitWithoutError(JoinPoint joinPoint) {
         String name = joinPoint.getSignature().getName();
         log.info("Out of method without errors : " + name );
     }
 
-    @AfterThrowing("execution(* tn.esprit.examen.services.*.*(..))")
+    @AfterThrowing("execution(* tn.esprit.projet.services.*.*(..))")
     public void logMethodExitWithError(JoinPoint joinPoint) {
         String name = joinPoint.getSignature().getName();
         log.error("Out of method with erros : " + name );
     }
 
-    @After("execution(* tn.esprit.examen.services.*.*(..))")
+    @After("execution(* tn.esprit.projet.services.*.*(..))")
     public void logMethodExit(JoinPoint joinPoint) {
         String name = joinPoint.getSignature().getName();
         log.info("Out of method : " + name );
